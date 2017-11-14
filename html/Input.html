@@ -1,0 +1,24 @@
+<head>
+ <title>Dummy HTML</title>
+</head>
+<body>
+ <h1>Kode Fun is Awesome</h1>
+ <h1>You're awesome</h1>
+ <form action="/cgi-bin/form.py" method="get" enctype="multipart/form-data">
+
+ 	Text input: <input maxlength="60" size="60" value="0" name="textinput"> 
+
+ <input value="Submit" type="submit">
+
+ </form>
+
+ <p>Numeric restrictions will apply in the input field:</p>
+
+ <form action="/action_page.php">
+ 	Quantity (between 1 and 5):
+ 	<input type="number" name="quantity" min="1" max="5">
+ 	<input type="submit">
+ </form>
+
+ <p><b>Note:</b> type="number" is not supported in IE9 and earlier.</p>
+</body>
