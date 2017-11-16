@@ -1,24 +1,32 @@
 <head>
- <title>Dummy HTML</title>
+ <title>HTTP Fibonacci</title>
 </head>
 <body>
- <h1>Kode Fun is Awesome</h1>
- <h1>You're awesome</h1>
- <form action="/cgi-bin/form.py" method="get" enctype="multipart/form-data">
+ <h1>Test Zweicom</h1>
+ <h4>Cálculo del elemento n y n-1 de la sucesión de Fibonacci</h4>
 
- 	Text input: <input maxlength="60" size="60" value="0" name="textinput"> 
+ <p>Ingrese el número n dentro del siguiente cuadro y presione el botón "Calcula mis números" para obtener los resultados: </p>
 
- <input value="Submit" type="submit">
-
- </form>
-
- <p>Numeric restrictions will apply in the input field:</p>
-
- <form action="/action_page.php">
- 	Quantity (between 1 and 5):
+ <form id = "n_input">
+ 	Número del elemento (between 1 and 5):
  	<input type="number" name="quantity" min="1" max="5">
- 	<input type="submit">
+ 	<!--<input type="submit">-->	
  </form>
+ 
+  <p><b>Nota:</b> type="number" is not supported in IE9 and earlier.</p>
+  <!--Se debe testear/averiguar hasta qué número funciona y cambniar restricción de input en base a ello.-->
+  <button onclick="myFunction()">Calcula mis números</button>
 
- <p><b>Note:</b> type="number" is not supported in IE9 and earlier.</p>
+ <p id="demo"></p>
+
+<!--Se debe programar algoritmo en javascript y luego printear ambos resultados.-->
+ <script>
+    function myFunction() {
+        var n = document.getElementById("n_input");
+        var text = "";
+        text += n.elements[0].value  + "<br>";
+        
+        document.getElementById("demo").innerHTML = text;
+    }
+ </script> 
 </body>
