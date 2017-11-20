@@ -10,19 +10,24 @@ Desarrollo de servicio http que al recibir un número n como entrada entregue lo
 * Se decide realizar la lectura y procesamiento de datos con script de javascript por simplicidad.
 * Se implementa lectura y despliegue de datos obtenidos desde un campo en página que produce el archivo html.
 
-
-### Prerequisites
-What things you need to install the software and how to install them
+### Prerequisitos
+Instalación de Anaconda + creación de entorno virtual con python 2.7
 
 ```
 Give examples
 ```
 
-### Installing
 
-A step by step series of examples that tell you have to get a development env running
+### Dependencias del repositorio
+El repositorio se compone de ...
 
-Say what the step will be
+```
+Give examples
+```
+
+### Metodología para la utilización del servicio http
+
+A continuación se explican los pasos a seguir para hacer uso del servicio desarrollado:
 
 ```
 Give the example
@@ -38,7 +43,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Tests
 
-Por definir
+Con el fin de comprobar el correcto funcionamiento de la aplicación se propone el siguiente conjunto de pruebas a realizar:
 
 ### Break down into end to end tests
 
@@ -56,11 +61,8 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Deployment
 
-Add additional notes about how to deploy this on a live system
-
-## Herramientas utilizadas
+## Herramientas utilizadas durante el desarrollo
 
 * Anaconda: manejo de entornos virtuales con una versión determinada de python.
 * Editey: Visualización sencilla y rápida de página generada por archivo html.
