@@ -62,6 +62,8 @@ http server is running...
 ```
 Finalmente, para utilizar el servicio se debe ingresar en el navegador la dirección **127.0.0.1/Input.html**. En esta página se describe brevemente la aplicación y se provee un campo donde se puede ingresar el número del elemento de la sucesión de Fibonacci que se desea conocer (junto con el que le antecede). Una vez que se ha ingresado el número en el campo, se debe proceder a presionar el botón "Calcula mis números" para obtener el resultado esperado en la parte inferior de la página.
 
+Nota: en caso de que lo anterior no funcione, se puede probar el servicio de manera sencilla en Editey, creando un nuevo archivo html y copiano el contenido de Input.html
+
 
 ## Tests
 
@@ -93,9 +95,27 @@ Nota: el campo definido en el archivo html no permite entradas que no sean numé
 * Anaconda: manejo de entornos virtuales con una versión determinada de python.
 * Editey: Visualización sencilla y rápida de página generada por archivo html.
 
+## Referencias
+
+Durante la realización del test se utilizaron las siguientes referencias:
+
+* Simple HTTP Server and Client in Python (https://www.junian.net/2014/07/simple-http-server-and-client-in-python.html)
+* README-Template (https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* W3Schools, JavaScript Tutorial (https://www.w3schools.com/js/default.asp)
+* W3Schools, HTML Input Types (https://www.w3schools.com/html/html_form_input_types.asp)
+* Conda Documentation, Tasks (https://conda.io/docs/user-guide/tasks/)
+* Editey (http://www.editey.com/)
+
+
 ## Comentarios finales
 
-Se agradecerá todo tipo de feedback asociado a la realización de esta actividad. 
+Siendo la primera vez que me toca programar algo de este estilo, la implementación actual podría mejorarse en distintos aspectos:
+
+* Se podría programar que los resultados se entreguen apretando enter mientras se está dentro del campo, en vez de utilizar el botón.
+* Se podría mejorar el formato de la página utilizando CSS.
+* Se podría haber implementado en una máquina virtual (en Google Cloud Platform por ejemplo).
+
+Por último, se agradecerá todo tipo de feedback asociado a la realización de esta actividad.
 
 
 
