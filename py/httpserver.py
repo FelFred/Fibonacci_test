@@ -14,7 +14,7 @@ class KodeFunHTTPRequestHandler(BaseHTTPRequestHandler):
   
   #handle GET command
   def do_GET(self):
-    rootdir = 'c:/Users/Koky/Google Drive/Universidad/Dcc/Zweicom/Tutorial pipe/html/' #file location
+    rootdir = 'C:/RepositoryDirectory/Fibonacci_test-master/html/' #file location
     try:
       if self.path.endswith('.html'):
         f = open(rootdir + self.path) #open requested file
