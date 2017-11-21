@@ -44,7 +44,11 @@ Para activar el entorno que utiliza python 2.7, denominado py27, se debe ejecuta
 ```
 activate py27
 ```
-Posteriormente se debe clonar o copiar el repositorio. Luego se debe navegar a través de la consola a la carpeta correspondiente y ejecutar el script **httpserver.py**
+Posteriormente se debe clonar o copiar el repositorio. Una vez hecho lo anterior se debe modificar dentro del archivo **httpserver.py** en el directorio C:\RepositoryDirectory\Fibonacci_test-master\py el valor de la variable root en la línea 17 del código en base a la ruta escogida para la localización del repositorio.
+```
+rootdir = 'C:/RepositoryDirectory/Fibonacci_test-master/html/' #file location
+```
+Luego se debe navegar a través de la consola a la carpeta correspondiente y ejecutar el script **httpserver.py**.
 ```
 cd C:\RepositoryDirectory\Fibonacci_test-master\py
 python httpserver.py
