@@ -87,6 +87,8 @@ El elemento número 50 es: 12586269025, y el elemento anterior es: 7778742049
 El elemento número 1477 es: Infinity, y el elemento anterior es: 1.3069892237633987e+308
 El elemento número 1500 es: Infinity, y el elemento anterior es: Infinity
 ```
+Para revisar el valor exacto del elemento n, se puede utilizar el siguiente enlace como referencia: http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibtable.html
+
 Nota: el campo definido en el archivo html no permite entradas que no sean numéricas. A pesar de esto existe una porción de código que corrobora que esto se cumpla. En caso contrario se despliega un mensaje de error solicitando una entrada válida (numérica).
 
 
@@ -105,7 +107,7 @@ Durante la realización del test se utilizaron las siguientes referencias:
 * W3Schools, HTML Input Types (https://www.w3schools.com/html/html_form_input_types.asp)
 * Conda Documentation, Tasks (https://conda.io/docs/user-guide/tasks/)
 * Editey (http://www.editey.com/)
-
+* The first 300 Fibonacci numbers (http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibtable.html)
 
 ## Comentarios finales
 
