@@ -8,23 +8,60 @@
  <p>Ingrese el número n dentro del siguiente cuadro y presione el botón "Calcula mis números" para obtener los resultados: </p>
 
  <form id = "n_input">
- 	Número del elemento (between 1 and 5):
- 	<input type="number" name="quantity" min="1" max="5">
+ 	Número del elemento:
+ 	<input type="number" name="quantity">
  	<!--<input type="submit">-->	
  </form>
  
-  <p><b>Nota:</b> type="number" is not supported in IE9 and earlier.</p>
-  <!--Se debe testear/averiguar hasta qué número funciona y cambniar restricción de input en base a ello.-->
-  <button onclick="myFunction()">Calcula mis números</button>
+  <p><b>Nota:</b> Los valores que toma la sucesión para elementos mayores al número 1476 son demasiado grandes y se despliegan con el valor Infinity.</p>
+  <button onclick="getNumbers()">Calcula mis números</button>
 
  <p id="demo"></p>
 
 <!--Se debe programar algoritmo en javascript y luego printear ambos resultados.-->
  <script>
-    function myFunction() {
+    function getNumbers() {
+        // Se lee el número ingresado
         var n = document.getElementById("n_input");
-        var text = "";
-        text += n.elements[0].value  + "<br>";
+        var text = "";      // String que se utilizará para desplegar los resultados
+        // Se chequea si se ha ingresado un número
+        if (!isNaN(n.elements[0].value)) {
+            // Se extrae el valor como entero
+            var inputValue = parseInt(n.elements[0].value);
+        
+            // Inicialización de variables 
+            var y1 = 1;         // Almacena valor del elemento asociado a iteración previa
+            var y2 = 1;         // Almacena valor del elemento asociado a iteración actual
+            var actual = 1;     // Almacena valor actual de la sucesión
+            var contador = 0;   // Contador para manejar el número de iteraciones
+            
+            if (inputValue == 1) {
+               // Se entrega primer elemento y se menciona que el elemento anterior no existe
+               text += "El primer elemento es: " + y2 + ", y el elemento anterior no existe."
+               //print ('El primer elemento es: ', y2 , ', y el elemento anterior no existe') 
+            } else if (inputValue == 2) {
+               // Entrega de resultados
+               text += "El elemento número " +inputValue + " es: " + y2 + ", y el elemento anterior es: " + y1;
+               //print ('El elemento número ', input , ' es: ', y2, ', y el elemento anterior es: ', y1) 
+            } else if (inputValue > 2) { // n > 2
+               // Comienza iteración
+               contador = inputValue;   // Contador 
+               while (contador - 2 > 0) {
+                   // Calculo nuevo término y actualizo las salidas
+                   actual = y1 + y2;
+                   y1 = y2;
+                   y2 = actual;
+                   // Reduzco el número de iteraciones restantes en 1
+                   contador = contador - 1;
+               }
+               text += "El elemento número " +inputValue + " es: " + y2 + ", y el elemento anterior es: " + y1;
+            } else {
+               text += "Error: Por favor ingresar un número mayor o igual a 1."
+            }
+        } else {
+            //Se solicita un nuevo input numérico
+            text += "Error: por favor ingrese un número en el campo correspondiente."
+        }
         
         document.getElementById("demo").innerHTML = text;
     }
